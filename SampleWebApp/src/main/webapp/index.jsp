@@ -107,45 +107,11 @@
       color: #003366;
     }
 
-    /* Testimonial styles */
-    .testimonial {
-      background: #e0eaff;
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      position: relative;
-    }
-
-    .testimonial::before {
-      content: "“";
-      font-size: 3rem;
-      color: #007acc;
-      position: absolute;
-      top: 10px;
-      left: 20px;
-    }
-
-    .testimonial p {
-      font-size: 1.2rem;
-      color: #333;
-      margin: 0;
-      padding-left: 2rem;
-    }
-
-    .testimonial span {
-      display: block;
-      margin-top: 0.8rem;
-      font-weight: bold;
-      color: #003366;
-      padding-left: 2rem;
-    }
-
-    /* Hover effect for testimonials */
-    .testimonial:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-      transition: all 0.3s ease;
+    blockquote {
+      font-style: italic;
+      border-left: 5px solid #ccc;
+      margin: 1rem 0;
+      padding-left: 1rem;
     }
 
     .book-btn {
@@ -201,13 +167,6 @@
     <section id="curriculum">
       <h2>What You'll Learn</h2>
 
-      <h3> Measurements & Unit Conversions (2 weeks)</h3>
-      <ul>
-        <li>Precise scientific measurements</li>
-        <li>Units and conversions</li>
-        <li>Understanding error margins</li>
-      </ul>
-
       <h3>🏃 Kinematics (3 weeks)</h3>
       <ul>
         <li>Displacement, velocity, acceleration</li>
@@ -235,7 +194,7 @@
         <li>Sound, resonance, musical instruments</li>
       </ul>
 
-      <h3> Electricity & Magnetism (4 weeks)</h3>
+      <h3>🔌 Electricity & Magnetism (4 weeks)</h3>
       <ul>
         <li>Circuits and Ohm’s Law</li>
         <li>Magnetic fields and motors</li>
@@ -272,17 +231,12 @@
 
     <section id="testimonials">
       <h2>What Our Students Say</h2>
-
-      <div class="testimonial">
-        <p>I went from failing physics to getting an A. These tutors are amazing!</p>
-        <span>– Alex, Grade 12</span>
-      </div>
-
-      <div class="testimonial">
-        <p>I finally understand Newton’s laws thanks to these sessions!</p>
-        <span>– Maya, College Freshman</span>
-      </div>
-
+      <blockquote>
+        “I went from failing physics to getting an A. These tutors are amazing!” – Alex, Grade 12
+      </blockquote>
+      <blockquote>
+        “I finally understand Newton’s laws thanks to these sessions!” – Maya, College Freshman
+      </blockquote>
     </section>
 
     <section id="contact">
