@@ -2,29 +2,23 @@ pipeline {
     agent any
 
     stages {
-        stage('Test') {
+        stage('Test stage 1') {
             steps {
-                echo 'Running tests (if any).'
-                // Add any test commands here if necessary
+                sh 'cd SampleWebApp mvn test'
             }
         }
-
-        stage('Deploy to Tomcat') {
+        stage('Complie the Java Code stage 2') {
             steps {
-                script {
-                    // Deploy index.html directly to Tomcat's webapp folder
-                    sh 'cp path-to-your-html/index.html /path/to/tomcat/webapps/ROOT/index.html'
-                }
+                sh 'cd SampleWebApp && mvn clean package'
+            }
+        }
+     
+        
+        stage('Deploy to Tomcat Web Server') {
+            steps {
+                deploy adapters: [tomcat9(path: '', url: 'http://98.84.115.36:8080/')], contextPath: 'webapp', war: '**/*.war'
             }
         }
     }
 
-    post {
-        success {
-            echo 'Deployed successfully to Tomcat.'
-        }
-        failure {
-            echo 'Deployment failed.'
-        }
-    }
 }
