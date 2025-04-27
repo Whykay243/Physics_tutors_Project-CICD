@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Test') {
+            steps {
+                echo 'Running tests (if any).'
+                // Add any test commands here if necessary
+            }
+        }
+
+        stage('Deploy to Tomcat') {
+            steps {
+                script {
+                    // Deploy index.html directly to Tomcat's webapp folder
+                    sh 'cp path-to-your-html/index.html /path/to/tomcat/webapps/ROOT/index.html'
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Deployed successfully to Tomcat.'
+        }
+        failure {
+            echo 'Deployment failed.'
+        }
+    }
+}
