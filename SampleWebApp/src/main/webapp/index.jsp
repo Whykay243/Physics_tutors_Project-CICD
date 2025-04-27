@@ -20,6 +20,11 @@
       padding: 2rem 1rem;
     }
 
+    header h1 {
+      font-size: 3rem; /* made heading bigger */
+      margin-bottom: 0.5rem;
+    }
+
     nav {
       background: #004080;
       text-align: center;
@@ -33,6 +38,7 @@
       text-decoration: none;
       padding: 1rem;
       display: inline-block;
+      font-size: 1.1rem;
     }
 
     .container {
@@ -44,6 +50,10 @@
 
     h1, h2 {
       color: #003366;
+    }
+
+    h2 {
+      font-size: 2rem; /* made section headings bigger */
     }
 
     ul {
@@ -71,6 +81,7 @@
       border: none;
       border-radius: 4px;
       cursor: pointer;
+      font-size: 1rem;
     }
 
     .contact-info a {
@@ -113,6 +124,7 @@
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      font-size: 1.1rem;
     }
 
     @media (max-width: 600px) {
@@ -128,6 +140,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -250,4 +263,15 @@
         <p>📧 Email: <a href="mailto:yinkaajibola@physicstutors.org">yinkaajibola@physicstutors.org</a></p>
         <p>📞 Phone: <a href="tel:8573997810">(857) 399-7810</a></p>
         <p>🌐 Website: <a href="http://www.physicstutors.org" target="_blank">www.physicstutors.org</a></p>
-        <p>📸 Instagram:
+        <p>📸 Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+      </div>
+    </section>
+
+  </div> <!-- end container -->
+
+  <footer>
+    <p>&copy; 2025 Physics Tutors. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
