@@ -3,142 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Expert physics tutoring for high school and college students. Learn physics with confidence and clarity." />
+  <meta name="keywords" content="Physics, Tutors, Tutoring, Physics Help, High School Physics, College Physics" />
+  <meta name="author" content="Physics Tutors Team" />
+  <meta property="og:title" content="Physics Tutors | Learn with Confidence" />
+  <meta property="og:description" content="Master Physics with the best tutoring services." />
+  <meta property="og:image" content="path_to_image" />
+  <meta property="og:url" content="https://www.physicstutors.org" />
   <title>Physics Tutors | Learn with Confidence</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      color: #333;
-      background: linear-gradient(to bottom, #f9f9f9, #e6f2ff);
-    }
-
-    header, footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    header h1 {
-      font-size: 3rem; /* made heading bigger */
-      margin-bottom: 0.5rem;
-    }
-
-    nav {
-      background: #004080;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 1rem;
-      display: inline-block;
-      font-size: 1.1rem;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-    }
-
-    h1, h2 {
-      color: #003366;
-    }
-
-    h2 {
-      font-size: 2rem; /* made section headings bigger */
-    }
-
-    ul {
-      margin-left: 1rem;
-    }
-
-    form {
-      background: #f1f1f1;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.7rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      background-color: #003366;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .contact-info a {
-      color: #003366;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      background: #e0eaff;
-      padding: 1.5rem 1rem;
-      border-radius: 8px;
-      margin: 2rem 0;
-    }
-
-    .stat {
-      text-align: center;
-    }
-
-    .stat h3 {
-      margin: 0;
-      font-size: 2em;
-      color: #003366;
-    }
-
-    blockquote {
-      font-style: italic;
-      border-left: 5px solid #ccc;
-      margin: 1rem 0;
-      padding-left: 1rem;
-    }
-
-    .book-btn {
-      display: block;
-      width: fit-content;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
-      background-color: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    @media (max-width: 600px) {
-      .stats {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      nav a {
-        display: block;
-        padding: 0.75rem;
-      }
-    }
-  </style>
+  <link rel="icon" type="image/png" href="path/to/favicon.png">
 </head>
 
 <body>
@@ -148,13 +22,13 @@
     <p>Master Physics with Confidence and Clarity</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#curriculum">Curriculum</a>
-    <a href="#services">Services</a>
-    <a href="#stats">Stats</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
+  <nav aria-label="Main navigation">
+    <a href="#about" aria-label="Go to About section">About</a>
+    <a href="#curriculum" aria-label="Go to Curriculum section">Curriculum</a>
+    <a href="#services" aria-label="Go to Services section">Services</a>
+    <a href="#stats" aria-label="Go to Stats section">Stats</a>
+    <a href="#testimonials" aria-label="Go to Testimonials section">Testimonials</a>
+    <a href="#contact" aria-label="Go to Contact section">Contact</a>
   </nav>
 
   <div class="container">
@@ -166,7 +40,6 @@
 
     <section id="curriculum">
       <h2>What You'll Learn</h2>
-
       <h3>🏃 Kinematics (3 weeks)</h3>
       <ul>
         <li>Displacement, velocity, acceleration</li>
@@ -211,7 +84,7 @@
         <li><i class="fas fa-chart-line"></i> Monthly Progress Reports</li>
       </ul>
 
-      <a class="book-btn" href="https://calendly.com/yourname/physics-tutoring" target="_blank">Book a Free Consultation</a>
+      <a class="book-btn" href="https://calendly.com/yourname/physics-tutoring" target="_blank" aria-label="Book a free consultation with a Physics tutor">Book a Free Consultation</a>
     </section>
 
     <section id="stats" class="stats">
@@ -231,23 +104,29 @@
 
     <section id="testimonials">
       <h2>What Our Students Say</h2>
-      <blockquote>
-        “I went from failing physics to getting an A. These tutors are amazing!” – Alex, Grade 12
-      </blockquote>
-      <blockquote>
-        “I finally understand Newton’s laws thanks to these sessions!” – Maya, College Freshman
-      </blockquote>
+      <div class="testimonial-slider">
+        <div class="testimonial">
+          <blockquote>
+            “I went from failing physics to getting an A. These tutors are amazing!” – Alex, Grade 12
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            “I finally understand Newton’s laws thanks to these sessions!” – Maya, College Freshman
+          </blockquote>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Fill out the form below and we’ll get back to you within 24 hours:</p>
 
-      <form action="mailto:yinkaajibola@physicstutors.org" method="POST" enctype="text/plain">
+      <form action="mailto:yinkaajibola@physicstutors.org" method="POST" enctype="text/plain" onsubmit="return validateForm()">
         <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="email" name="email" placeholder="Email Address" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
         <input type="tel" name="phone" placeholder="Phone Number" required>
-        <textarea name="message" rows="5" placeholder="What do you need help with?"></textarea>
+        <textarea name="message" rows="5" placeholder="What do you need help with?" required></textarea>
         <button type="submit">Submit</button>
       </form>
 
@@ -264,7 +143,31 @@
 
   <footer>
     <p>&copy; 2025 Physics Tutors. All rights reserved.</p>
+    <p><a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a></p>
   </footer>
+
+  <script>
+    function validateForm() {
+      const email = document.querySelector('input[name="email"]').value;
+      const phone = document.querySelector('input[name="phone"]').value;
+      if (!email || !phone) {
+        alert("Please fill in all required fields.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+  <style>
+    .testimonial-slider {
+      display: flex;
+      overflow-x: auto;
+    }
+    .testimonial {
+      min-width: 300px;
+      margin: 1rem;
+    }
+  </style>
 
 </body>
 </html>
