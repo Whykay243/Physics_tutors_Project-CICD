@@ -8,80 +8,73 @@
   <meta name="author" content="Physics Tutors Team" />
   <meta property="og:title" content="Physics Tutors | Learn with Confidence" />
   <meta property="og:description" content="Master Physics with the best tutoring services." />
-  <meta property="og:image" content="https://www.physicstutors.org/assets/banner.jpg" />
+  <meta property="og:image" content="path_to_image" />
   <meta property="og:url" content="https://www.physicstutors.org" />
   <title>Physics Tutors | Learn with Confidence</title>
-  <link rel="icon" type="image/png" href="https://www.physicstutors.org/assets/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="path/to/favicon.png">
   <style>
-    :root {
-      --primary: #004080;
-      --accent: #ffc107;
-      --bg: #f9f9f9;
-      --dark: #222;
-      --light: #fff;
-      --gray: #666;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg);
-      color: var(--dark);
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f4f8;
+      color: #333;
       line-height: 1.6;
     }
 
     header {
-      background-color: var(--primary);
-      color: var(--light);
+      background: linear-gradient(135deg, #004080, #0074d9);
+      color: white;
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 4rem 2rem;
     }
 
     header h1 {
       font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
 
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background-color: var(--dark);
+      background-color: #003366;
       padding: 1rem;
-      flex-wrap: wrap;
+      text-align: center;
     }
 
     nav a {
-      color: var(--light);
+      color: white;
       text-decoration: none;
-      font-weight: 600;
+      margin: 0 1rem;
+      font-weight: bold;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: var(--accent);
+      color: #ffd700;
     }
 
     .container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
     }
 
     section {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
 
-    h2 {
-      font-size: 2rem;
-      color: var(--primary);
+    section h2 {
+      color: #004080;
+      border-bottom: 2px solid #0074d9;
+      padding-bottom: 0.5rem;
       margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-top: 1.5rem;
+      color: #0066cc;
     }
 
     ul {
@@ -90,104 +83,92 @@
 
     .book-btn {
       display: inline-block;
-      margin-top: 1rem;
+      background-color: #0074d9;
+      color: white;
       padding: 0.75rem 1.5rem;
-      background-color: var(--primary);
-      color: var(--light);
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
+      margin-top: 1rem;
+      font-weight: bold;
       transition: background-color 0.3s;
     }
 
     .book-btn:hover {
-      background-color: #00264d;
+      background-color: #005bb5;
     }
 
     .stats {
       display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
-      background-color: #eef2f7;
-      border-radius: 10px;
+      justify-content: space-around;
+      background: #eaf3fc;
       padding: 2rem;
-    }
-
-    .stat {
-      flex: 1;
-      text-align: center;
+      border-radius: 8px;
     }
 
     .stat h3 {
       font-size: 2rem;
-      color: var(--primary);
+      color: #004080;
     }
 
     .testimonial-slider {
       display: flex;
-      gap: 1rem;
       overflow-x: auto;
     }
 
     .testimonial {
-      min-width: 300px;
-      background-color: var(--light);
+      background: #f9f9f9;
+      border-left: 4px solid #0074d9;
       padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    }
-
-    form {
-      display: grid;
-      gap: 1rem;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-right: 1rem;
+      border-radius: 5px;
+      min-width: 280px;
     }
 
     form input, form textarea {
+      width: 100%;
       padding: 0.75rem;
+      margin-bottom: 1rem;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 5px;
     }
 
     form button {
-      background-color: #28a745;
+      background-color: #004080;
       color: white;
-      padding: 0.75rem;
       border: none;
-      border-radius: 6px;
-      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s;
+      font-weight: bold;
     }
 
     form button:hover {
-      background-color: #218838;
+      background-color: #002d5d;
     }
 
     footer {
-      background-color: var(--dark);
-      color: var(--light);
+      background-color: #002b55;
+      color: white;
       text-align: center;
       padding: 2rem 1rem;
-      margin-top: 4rem;
+      margin-top: 2rem;
     }
 
     footer a {
-      color: var(--accent);
+      color: #cce5ff;
+      margin: 0 0.5rem;
       text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
 
     .contact-info a {
-      color: var(--primary);
-      text-decoration: none;
+      color: #0074d9;
+    }
+
+    @media (max-width: 768px) {
+      .stats {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -212,40 +193,40 @@
 
     <section id="about">
       <h2>About Us</h2>
-      <p>We offer expert tutoring in high school and college-level physics, helping students build strong foundations and ace their exams. With personalized instruction and interactive methods, we make physics fun, intuitive, and empowering.</p>
+      <p>We offer expert tutoring in high school and college-level physics, helping students build strong foundations and ace their exams with confidence. With personalized instruction and hands-on learning, our approach is designed to make physics both fun and effective.</p>
     </section>
 
     <section id="curriculum">
       <h2>What You'll Learn</h2>
 
-      <h3>🏃 Kinematics</h3>
+      <h3>🏃 Kinematics (3 weeks)</h3>
       <ul>
         <li>Displacement, velocity, acceleration</li>
         <li>Motion analysis and graphing</li>
         <li>Free-fall problems</li>
       </ul>
 
-      <h3>🚀 Dynamics</h3>
+      <h3>🚀 Dynamics (8 weeks)</h3>
       <ul>
         <li>Newton’s Laws</li>
         <li>Friction, gravity, drag</li>
         <li>Rocket projects</li>
       </ul>
 
-      <h3>⚡ Energy & Momentum</h3>
+      <h3>⚡ Energy & Momentum (4 weeks)</h3>
       <ul>
         <li>Energy conservation</li>
         <li>Kinetic, potential, thermal energy</li>
         <li>Egg drop challenge</li>
       </ul>
 
-      <h3>🌊 Waves</h3>
+      <h3>🌊 Waves (4 weeks)</h3>
       <ul>
         <li>Wave types and properties</li>
         <li>Sound, resonance, musical instruments</li>
       </ul>
 
-      <h3>🔌 Electricity & Magnetism</h3>
+      <h3>🔌 Electricity & Magnetism (4 weeks)</h3>
       <ul>
         <li>Circuits and Ohm’s Law</li>
         <li>Magnetic fields and motors</li>
@@ -283,38 +264,36 @@
       <h2>What Our Students Say</h2>
       <div class="testimonial-slider">
         <div class="testimonial">
-          <blockquote>
-            “I went from failing physics to getting an A. These tutors are amazing!” – Alex, Grade 12
-          </blockquote>
+          <blockquote>“I went from failing physics to getting an A. These tutors are amazing!” – Alex, Grade 12</blockquote>
         </div>
         <div class="testimonial">
-          <blockquote>
-            “I finally understand Newton’s laws thanks to these sessions!” – Maya, College Freshman
-          </blockquote>
+          <blockquote>“I finally understand Newton’s laws thanks to these sessions!” – Maya, College Freshman</blockquote>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>We’d love to hear from you. Fill out the form below or contact us directly:</p>
+      <p>Fill out the form below and we’ll get back to you within 24 hours:</p>
 
       <form action="mailto:yinkaajibola@physicstutors.org" method="POST" enctype="text/plain" onsubmit="return validateForm()">
         <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="email" name="email" placeholder="Email Address" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
         <input type="tel" name="phone" placeholder="Phone Number" required>
         <textarea name="message" rows="5" placeholder="What do you need help with?" required></textarea>
         <button type="submit">Submit</button>
       </form>
 
+      <p>Or contact us directly:</p>
       <div class="contact-info">
         <p>Email: <a href="mailto:yinkaajibola@physicstutors.org">yinkaajibola@physicstutors.org</a></p>
         <p>Phone: <a href="tel:8573997810">(857) 399-7810</a></p>
+        <p>Website: <a href="http://www.physicstutors.org" target="_blank">www.physicstutors.org</a></p>
         <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
       </div>
     </section>
 
-  </div>
+  </div> <!-- end container -->
 
   <footer>
     <p>&copy; 2025 Physics Tutors. All rights reserved.</p>
@@ -332,5 +311,6 @@
       return true;
     }
   </script>
+
 </body>
 </html>
